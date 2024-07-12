@@ -1,7 +1,7 @@
 import React from "react";
 import heroBg from "@/assets/hero-bg.png";
 import Image from "next/image";
-
+import image from '@/assets/2.jpg'
 const WikipediaPolicies = () => {
   return (
     <div className=" min-h-screen w-full ">
@@ -37,6 +37,13 @@ const WikipediaPolicies = () => {
                 صفحه‌های مرتبط می‌پردازد.
               </p>
             </div>
+            <Image 
+            src={image}
+            alt="image"
+            width={700}
+            className=" max-h-[500px] object-contain mx-auto"
+
+            />
             <div className="flex flex-col gap-4">
               <h1 className="text-neutral-900 text-xl md:text-2xl  font-bold leading-8 tracking-wide">
                 سیاست‌های اصلی

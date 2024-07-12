@@ -1,6 +1,7 @@
 import React from "react";
 import heroBg from "@/assets/hero-bg.png";
 import Image from "next/image";
+import image from '@/assets/1.png';
 
 const WikipediaEncyclopedia = () => {
   return (
@@ -57,6 +58,12 @@ const WikipediaEncyclopedia = () => {
               جایی که همگی می‌توانیم به آن‌جا برویم تا بیندیشیم، بیاموزیم، و
               دانشمان را به اشتراک بگذاریم.»
             </p>
+            <Image 
+            src={image}
+            alt="img"
+            width={600}
+            className="w-full md:w-[80%] xl:w-[65%] mx-auto"
+            />
             <span className=" text-lg md:text-xl font-medium text-neutral-700">
               چند سؤال مهم درباره ویکیپدیا
             </span>

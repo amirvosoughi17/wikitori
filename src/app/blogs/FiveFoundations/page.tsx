@@ -1,7 +1,7 @@
 import React from "react";
 import heroBg from "@/assets/hero-bg.png";
 import Image from "next/image";
-
+import image from '@/assets/3.jpg'
 const FiveFoundations = () => {
   return (
     <div className=" min-h-screen w-full ">
@@ -92,6 +92,13 @@ const FiveFoundations = () => {
                 به یاد داشته باشید که هرچه بنویسید، شاید برای آیندگان بماند.
               </p>
             </div>
+            <Image 
+            src={image}
+            alt="image"
+            width={700}
+            className=" max-h-[500px] object-contain mx-auto"
+
+            />
           </div>
         </div>
       </div>
