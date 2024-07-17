@@ -28,15 +28,15 @@ const Totals = () => {
         </h1>
         <div className="flex lg:flex-row flex-col gap-[25px] sm:gap-[40px] lg:gap-[60px] ">
           <div className="flex flex-row gap-[25px] sm:gap-[40px] lg:gap-[60px]">
-            <Total from={0} to={200} title="مقاله ثبت شده" />
+            <Total from={0} to={10} title=" سال در ویکپیدا" />
             <span className="w-[1.5px] bg-gray-300/40 h-[140px] "></span>
-            <Total from={0} to={600} title="total articles" />
+            <Total from={0} to={500} title="مقاله در ویکیپدیا" />
           </div>
           <span className="w-[1.5px] bg-gray-300/40 h-[140px] hidden lg:block"></span>
           <div className="flex  flex-row gap-[25px] sm:gap-[40px] lg:gap-[60px]">
-            <Total from={0} to={200} title="مقاله ثبت شده" />
+            <Total from={0} to={20000} title="ویرایش در ویکیپیدا" />
             <span className="w-[1.5px] bg-gray-300/40 h-[140px]"></span>
-            <Total from={0} to={600} title="total articles" />
+            <Total from={0} to={170} title="کل پروژه ها" />
           </div>
         </div>
       </div>

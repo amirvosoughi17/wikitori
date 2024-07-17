@@ -12,7 +12,7 @@ const Navigation = () => {
   return (
     <header className="flex items-center justify-between px-8 w-full sticky z-50 max-w-[1660px] mx-auto">
       <div className="">
-        <Image src={Logo} alt="Logo" width={100} height={100} />
+        <Image src={Logo} alt="Logo" width={110} height={100} className="mb-[-20px]" />
       </div>
       <nav className="hidden lg:flex items-center gap-7 ml-[-170px]">
         <NavigationLink href="/" label="خانه" />
@@ -21,7 +21,7 @@ const Navigation = () => {
         <span className="w-[1px] h-[20px] bg-gray-300/30"></span>
         <NavigationLink href="/#services" label="خدمات" />
         <span className="w-[1px] h-[20px] bg-gray-300/30"></span>
-        <NavigationLink href="/#articles" label="مقالات" />
+        <NavigationLink href="/#blogs" label="مقالات" />
       </nav>
       <div className="flex items-center ">
         <div className="hidden lg:flex gap-1 items-center">

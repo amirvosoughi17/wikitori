@@ -7,6 +7,11 @@ import Logo from "@/assets/wiki-logo-single.png";
 import { FaTelegram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
+import { AiOutlineProduct } from "react-icons/ai";
+import { MdOutlineHomeRepairService } from "react-icons/md";
+import { MdArticle } from "react-icons/md";
+import { FaSquarePhone } from "react-icons/fa6";
 
 interface HamburgerMenuProps {}
 
@@ -39,10 +44,10 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({}) => {
           initial={{ x: "100%" }}
           animate={{ x: isOpen ? 0 : "100%" }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
-          className="fixed top-0 right-0 w-full h-full bg-slate-900 text-white z-40"
+          className="fixed top-0 right-0 w-full h-full bg-neutral-900 text-white z-40"
         >
           <div className="w-full h-full flex justify-between py-[60px] flex-col  p-10">
-            <div className="flex flex-col gap-[70px]">
+            <div className="flex flex-col gap-[30px]">
               <Image
                 src={Logo}
                 alt="logo"
@@ -50,39 +55,50 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({}) => {
                 height={40}
                 className="mr-[-55px]"
               />
-              <div className="flex flex-col">
+              <div className="flex flex-col gap-3">
                 <Link
                   onClick={toggleMenu}
                   href="/"
-                  className="text-3xl  mb-4 text-neutral-300 hover:border-b-[0.9px] duration-200 border-neutral-500 pb-3"
+                  className="flex items-center gap-5  mb-4 text-neutral-300 hover:border-b-[0.9px] duration-200 border-neutral-500 pb-3"
                 >
-                  خانه
+                  <FaHome  size={25}/>
+                  <h1 className="text-3xl ">خانه</h1>
                 </Link>
                 <Link
                   onClick={toggleMenu}
-                  href="/#about"
-                  className="text-3xl  mb-4 text-neutral-300 hover:border-b-[0.9px] duration-200 border-neutral-500 pb-3"
+                  href="/#products"
+                  className=" flex items-center gap-5  mb-4 text-neutral-300 hover:border-b-[0.9px] duration-200 border-neutral-500 pb-3"
                 >
-                  محصولات
+                  <AiOutlineProduct  size={25}/>
+                  <h1 className=" text-3xl">محصولات</h1>
                 </Link>
                 <Link
                   onClick={toggleMenu}
-                  href="/contact"
-                  className="text-3xl  mb-4 text-neutral-300 hover:border-b-[0.9px] duration-200 border-neutral-500 pb-3"
+                  href="/#services"
+                  className=" flex items-center gap-5  mb-4 text-neutral-300 hover:border-b-[0.9px] duration-200 border-neutral-500 pb-3"
                 >
-                  خدمات
+                  <MdOutlineHomeRepairService size={25}/>
+                  <h1 className="text-3xl" >خدمات</h1>
                 </Link>
                 <Link
                   onClick={toggleMenu}
-                  href="/contact"
-                  className="text-3xl  mb-4 text-neutral-300 hover:border-b-[0.9px] duration-200 border-neutral-500 pb-3"
+                  href="/#blogs"
+                  className="t flex items-center gap-5  mb-4 text-neutral-300 hover:border-b-[0.9px] duration-200 border-neutral-500 pb-3"
                 >
-                  مقالات
+                  <MdArticle  size={25}/>
+                  <span className=" text-3xl">مقالات</span>
+                </Link>
+                <Link
+                  onClick={toggleMenu}
+                  href="/"
+                  className=" flex items-center gap-5  mb-4 text-neutral-300 hover:border-b-[0.9px] duration-200 border-neutral-500 pb-3"
+                >
+                  <FaSquarePhone  size={25}/>
+                  <span className=" text-3xl">تماس باما</span>
                 </Link>
               </div>
             </div>
             <div className=" w-full flex items-center justify-between">
-              <span className="w-1"></span>
               <div className="">
                 <div className="flex items-center gap-5">
                   <Link href="/" className="bg-slate-500/30 p-2 rounded-xl">

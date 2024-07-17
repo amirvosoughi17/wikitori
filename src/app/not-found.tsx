@@ -1,9 +1,15 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 const NotFound = () => {
-  return (
-    <div>NotFound</div>
-  )
-}
+  const router = useRouter();
 
-export default NotFound
+  useEffect(() => {
+    router.push("/");
+  }, [router]);
+
+  return null;
+};
+
+export default NotFound;

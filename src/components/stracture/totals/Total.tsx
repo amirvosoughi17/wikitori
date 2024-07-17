@@ -4,12 +4,13 @@ import Counter from "./Counter";
 
 const Total: React.FC<totalProps> = ({ title, from, to }) => {
   return (
-    <div className="flex items-center justify-center flex-col gap-6">
-      <div className=" relative min-h-[75px]">
+    <div className="flex w-1/2 lg:w-full items-center justify-center flex-col gap-6">
+      <div className=" relative flex items-center gap-3 min-h-[75px]">
+        <span className=" text-2xl">+</span>
         <Counter
           from={from}
           to={to}
-          className=" font-semibold  text-[#272657] text-7xl z-20  "
+          className=" font-semibold  text-[#272657] text-5xl md:text-7xl min-w-[110px] lg:min-w-[150px] z-20  "
         />
         <span className="absolute bottom-5 left-[-10px]  z-0 w-[155px] h-[16px] bg-[#3a65c825]"></span>
       </div>
