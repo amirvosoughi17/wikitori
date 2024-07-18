@@ -15,7 +15,7 @@ const Hero = () => {
         width={1000}
         height={1000}
         alt="herobg"
-        className="w-full object-cover h-[585px] lg:h-[550px] xl:h-[570px] z-0 absolute  top-0"
+        className="w-full object-cover h-[600px] lg:h-[550px] xl:h-[600px] 2xl:h-[700px] z-0 absolute  top-0"
       />
       <div className="flex flex-col items-center justify-center gap-6 mt-[110px] ">
         <TypeingAnimation />

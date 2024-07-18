@@ -47,7 +47,6 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({}) => {
           className="fixed top-0 right-0 w-full h-full bg-neutral-900 text-white z-40"
         >
           <div className="w-full h-full flex justify-between py-[60px] flex-col  p-10">
-            <div className="flex flex-col gap-[30px]">
               <Image
                 src={Logo}
                 alt="logo"
@@ -55,6 +54,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({}) => {
                 height={40}
                 className="mr-[-55px]"
               />
+            <div className="flex flex-col gap-[30px]">
               <div className="flex flex-col gap-3">
                 <Link
                   onClick={toggleMenu}
