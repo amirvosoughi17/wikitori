@@ -19,7 +19,7 @@ const Totals = () => {
           </span>
           <WikiUnderLine
             className="text-[#3A65C8] font-semibold text-xl sm:text-2xl xl:text-3xl"
-            title="ویکیطوری ,"
+            title="ویکیتوری ,"
             size="w-[110px] h-[10px]"
           />
           <span className="font-semibold text-xl sm:text-2xl xl:text-3xl text-[#272657]">

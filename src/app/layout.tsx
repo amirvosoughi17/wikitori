@@ -8,7 +8,7 @@ import Provider from "@/components/providers/Provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ویکیطوری",
+  title: "ویکیتوری",
   description: "اراعه دهنده خدمات ویکیپدیا",
 };
 

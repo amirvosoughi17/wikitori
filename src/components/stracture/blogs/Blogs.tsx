@@ -36,7 +36,7 @@ const Blogs = () => {
         <div className="flex flex-col items-center gap-2">
           <Image src={blogsTitle} alt="title" width={300} height={150} />
           <p className="text-md font-medium text-[#82819c] ">
-            آخرین مطالب و مقالات مفید منتشر شده توسط ویکیطوری
+            آخرین مطالب و مقالات مفید منتشر شده توسط ویکیتوری
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-8">

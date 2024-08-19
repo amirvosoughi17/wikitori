@@ -48,7 +48,7 @@ const Services = () => {
         height={500}
         />
       <div className="flex flex-col items-center justify-center max-w-[1440px] mx-auto  gap-[80px] w-full mt-[-500px] xl:mt-[-500px]">
-        <h1 className="text-2xl max-w-[88%] leading-9 text-center md:text-3xl lg:text-4xl font-semibold text-white">با خدمات و پلتفرم های ویکیطوری آشنا شوید</h1>
+        <h1 className="text-2xl max-w-[88%] leading-9 text-center md:text-3xl lg:text-4xl font-semibold text-white">با خدمات و پلتفرم های ویکیتوری آشنا شوید</h1>
         <div className=" grid grid-cols-2 lg:flex flex-wrap items-center justify-center gap-2 md:gap-7">
           {servicesInfo.map((item, index) => (
             <Service key={index} image={item.image} content={item.content} />
