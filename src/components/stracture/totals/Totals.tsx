@@ -28,7 +28,7 @@ const Totals = () => {
         </h1>
         <div className="flex lg:flex-row flex-col gap-[25px] sm:gap-[40px] lg:gap-[60px] ">
           <div className="flex flex-row gap-[25px] sm:gap-[40px] lg:gap-[60px]">
-            <Total from={0} to={10} title=" سال در ویکی پدیا" />
+            <Total from={0} to={10} title="سال سابقه فعالیت در ویکی پدیا" />
             <span className="w-[1.5px] bg-gray-300/40 h-[140px] "></span>
             <Total from={0} to={500} title="مقاله در ویکی پدیا" />
           </div>

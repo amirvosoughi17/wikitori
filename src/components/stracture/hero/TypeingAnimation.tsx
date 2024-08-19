@@ -5,9 +5,9 @@ const TypeingAnimation = () => {
   return (
     <TypeAnimation
       sequence={[
-        "ویکی طوری , ",
+        "ویکیطوری , ",
         1000,
-        "ویکی طوری , اولین اژانس تخصصی ویکی پدیا",
+        "ویکیطوری , اولین اژانس تخصصی ویکی پدیا",
         1000,
       ]}
       wrapper="span"

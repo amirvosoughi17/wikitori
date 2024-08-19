@@ -13,10 +13,10 @@ const DownloadButton = () => {
   };
   return (
     <button 
-    onClick={handleDownload}
+    onClick={() => {console.log("no src ")}}
     className="bg-white px-9 py-4 rounded-lg text-[#272657] mt-4 font-medium z-40 flex items-center gap-2">
       <Image src={documentIcon} alt="icon" width={20} height={20} />
-      <span>دانلود رزمه</span>
+      <span>دانلود رزومه</span>
     </button>
   );
 };
